@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #343a40;
+  line-height: 1;
+  background-image: url("/public/v996-021.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: fit-content;
+}
+.rezultate-medicale {
+  margin-top: 10rem;
+}
+.title-app-content {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+
+  margin-bottom: 10px;
+  margin-left: 300px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #004d40;
+  text-shadow: 5px 5px #558abb60;
+}
+
+.app-content-uric {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px; /* Space between boxes */
+  margin-left: 300px;
+  margin-right: 100px;
+}
+
+.app-content-uric .item {
+  width: 1470px;
+}
+.app-content-uric > .item > .open > .content-box > div {
+  width: 100%;
+}
+
+.app-content-medical-gait {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 10px; /* Space between boxes */
+  margin-left: 300px;
+  margin-right: 100px;
+}
+.accordion {
+  width: 650px;
+  /* margin-bottom: 2rem; */
+}
+
+.item {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.381);
+  width: 700px;
+  padding: 20px 24px;
+  cursor: pointer;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  column-gap: 30px;
+  background-color: white;
+  transition: height 0.5s ease;
+  overflow: hidden;
+  height: 80px; /* Set a default height */
+  margin-bottom: 30px;
+}
+
+.item.open {
+  height: 500px; /* Expand the item on click */
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.number {
+  font-size: x-large;
+  font-weight: 600;
+  color: #ced4da;
+}
+
+.title,
+.icon {
+  font-size: x-large;
+  font-weight: 550;
+}
+
+.content-box {
+  grid-column: 1 / -1;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.item.open .content-box {
+  transform: translateY(0);
+  max-height: 400px; /* Define a max height for the content box */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+.open .number,
+.open .title,
+.open .icon {
+  color: #087f5b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: white; /* Ensure the header background is white */
+  width: 20%;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa; /* Sticky header background */
+  z-index: 1; /* Ensure the header stays above other content */
+}
+
+tbody tr:nth-child() {
+  background-color: #f2f2f2;
+  width: 20%;
+}
+
+.add-measurement {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #087f5b;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.add-measurement:hover {
+  background-color: #065b41;
+}
+
+/* Styling for the icon container */
+.icon-container {
+  display: flex;
+  gap: 10px;
+  background-color: white; /* Space between the two buttons */
+}
+
+/* Styling for the individual icons (buttons) */
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #087f5b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  user-select: none;
+  font-size: 30px;
+}
+
+.icon.open {
+  background-color: #087f5b;
+}
+
+.icon.close {
+  background-color: #ced4da;
+}
+
+.icon:hover {
+  background-color: #065b41;
+}
+
+.icon.close:hover {
+  background-color: white;
+}
+
+.chart-box {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.chart-wrapper {
+  width: 50rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  height: 5px;
+  width: 5px;
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.gait-parameter-selector button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.unselected {
+  background-color: #f1f1f1;
+  color: black;
+}

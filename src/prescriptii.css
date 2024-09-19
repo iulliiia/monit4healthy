@@ -1,0 +1,126 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-prescriptie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  padding: 20px;
+}
+
+h2,
+h3 {
+  color: #004d40;
+  margin-bottom: 15px;
+}
+
+.form-prescriptie {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.449);
+  padding: 20px;
+  width: 700px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-box-prescriptie {
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input-box-prescriptie label {
+  display: block;
+  font-size: 1.2rem;
+  color: #004d40;
+  margin-bottom: 5px;
+}
+
+.input-box-prescriptie input {
+  border: 1px solid #00796b;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #00796b;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: medium;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #004d40;
+}
+
+.toggle-medication-btn {
+  margin-top: 10px;
+  background-color: #ff7c36;
+}
+.toggle-medication-btn:hover {
+  background-color: #ff5900;
+}
+.medication-form {
+  margin-top: 20px;
+  background: #11494213;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.449);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.medication-list {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.449);
+  padding: 20px;
+}
+
+.medication-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.medication-list ul li {
+  font-size: 1.2rem;
+  color: #004d40;
+  margin: 10px 0;
+}
+
+.total-price {
+  font-size: 1.4rem;
+  color: #004d40;
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* prescriptii.css */
+
+.delete-medication-btn {
+  background-color: #7b7b7b8b;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: small;
+  margin-left: 10px;
+}
+
+.delete-medication-btn:hover {
+  background-color: #c62828;
+}

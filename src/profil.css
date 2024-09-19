@@ -1,0 +1,117 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-page {
+  margin: 0;
+  padding: 0;
+  background-image: url("/public/v996-021.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #004d40;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  padding: 20px;
+}
+
+h1 {
+  color: #004d40;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.45);
+  padding: 20px;
+  width: 600px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: height 0.5s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  height: 270px; /* Default height to accommodate more fields */
+}
+
+.profile-info.open {
+  height: 480px; /* Expanded height to accommodate new fields */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info p {
+  font-size: 1.4rem;
+  color: #004d40;
+  margin: 10px 0;
+}
+
+.profile-info p strong {
+  color: #00796b;
+}
+
+.profile-info input {
+  border: 1px solid #00796b;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 1.2rem;
+  color: #004d40;
+  width: 100%;
+  margin-top: 5px;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+.profile-info input:focus {
+  border: 1px solid #004d40;
+  outline: none;
+}
+
+.profile-card-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.profile-card-actions button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: medium;
+}
+
+.profile-card-actions button:hover {
+  background-color: #004d40;
+}
+
+.cnp-info {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.45);
+  padding: 20px;
+  width: 600px;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.cnp-info p {
+  font-size: 1.4rem;
+  color: #004d40;
+  margin: 10px 0;
+}
+
+.cnp-info p strong {
+  color: #00796b;
+}
